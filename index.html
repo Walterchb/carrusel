@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owl Carousel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body>
+  <div class="owl-carousel">
+    <div><img src="https://files.cdn.thinkific.com/file_uploads/624155/attachments/9ea/084/eda/1.png" alt="Logo 1"></div>
+    <div><img src="https://files.cdn.thinkific.com/file_uploads/624155/attachments/2e0/51c/1bf/2.png" alt="Logo 2"></div>
+    <div><img src="https://files.cdn.thinkific.com/file_uploads/624155/attachments/64d/c37/1c0/3.png" alt="Logo 3"></div>
+    <div><img src="https://files.cdn.thinkific.com/file_uploads/624155/attachments/fba/fe5/994/4.png" alt="Logo 4"></div>
+    <div><img src="https://files.cdn.thinkific.com/file_uploads/624155/attachments/a26/43f/ef1/5.png" alt="Logo 5"></div>
+    <div><img src="https://files.cdn.thinkific.com/file_uploads/624155/attachments/9d1/da6/7ed/Universidad_Peruana_de_Ciencias_Aplicadas.png?text=Logo+6" alt="Logo 6"></div>
+    <div><img src="https://files.cdn.thinkific.com/file_uploads/624155/attachments/d74/6a7/2d2/Logos_universidades.png" alt="Logo 7"></div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        items: 3,
+        margin: 10, // debe coincidir con el doble del margen que estableciste en el CSS
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: false,
+        autoplaySpeed: 2000,
+        smartSpeed: 0,
+        touchDrag: false, // Deshabilita el arrastre con el dedo
+        mouseDrag: false, // Deshabilita el arrastre con el mouse
+        pullDrag: false, // Deshabilita el arrastre en todas las direcciones
+        dots: false, // Deshabilita los puntos de navegación si no los necesitas
+        nav: false // Deshabilita las flechas de navegación si no las necesitas
+      });
+    });
+  </script>
+</body>
+</html>
